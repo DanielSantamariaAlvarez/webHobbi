@@ -135,6 +135,27 @@ header{
     }
 }
 
+// Hobbies ----------------------------------------------------------------------------
+.hobbies{
+    margin-top: 30px;
+    .titulo{
+        text-align: center;
+        font-weight: 300;
+        margin: 10px;
+    }
+}
+
+
+// Eventos-----------------------------------------------------------------------------------
+.eventos{
+    margin-top: 30px;
+    .titulo{
+        text-align: center;
+        font-weight: 300;
+        margin: 10px;
+    }
+}
+
 
 
 @media screen and (max-width:767px){
@@ -173,6 +194,7 @@ header{
         a{
             display: block;
             margin: 10px 0;
+            padding: 5px ;
         }
         
         

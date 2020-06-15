@@ -141,6 +141,26 @@ header {
   font-size: 20px;
 }
 
+.hobbies {
+  margin-top: 30px;
+}
+
+.hobbies .titulo {
+  text-align: center;
+  font-weight: 300;
+  margin: 10px;
+}
+
+.eventos {
+  margin-top: 30px;
+}
+
+.eventos .titulo {
+  text-align: center;
+  font-weight: 300;
+  margin: 10px;
+}
+
 @media screen and (max-width: 767px) {
   .inner-width .desaparecer {
     display: none;
@@ -174,6 +194,7 @@ header {
   .navigation-menu a {
     display: block;
     margin: 10px 0;
+    padding: 5px;
   }
   .active {
     display: block;
