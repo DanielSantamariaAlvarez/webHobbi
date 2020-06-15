@@ -1,0 +1,179 @@
+$verde:#94fab0;
+$amarillo:#fff96e;
+$aguamarina:#8fe3d9;
+$rosa:#fbc8d2;
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+header{
+    height: 200px;
+    color: #000;
+}
+
+
+.primi{
+    &:hover{
+        transform: scale(1.15);
+        transition: .3s linear;
+    }
+}
+.especiales{
+    display: none;
+}
+
+.inner-width{
+    max-width: 1000px;
+    padding: 0 10px;
+    margin: auto;
+    
+}
+
+.logo{
+    float: left;
+    padding: 20px 0;
+    img{
+        height: 90px;
+    }
+}
+
+.ingresar{
+    display: flex;
+    max-height: 100px;
+    .inscripcion,.iniSesion{
+        display: block;
+    }
+}
+
+.navigation-menu{
+    display: flex;
+    align-items: center;
+    min-height: 90px;
+    text-align: center;
+    a{
+        margin: auto;
+        margin-left: 10px;;
+        font-size: 24px;
+        font-weight: 300;
+        padding: 12px 20px;
+        border-radius: 4px;
+        transition: .3s linear;
+        color: #000;
+        &:hover{
+            transform: scale(1.1);
+            color: #000;
+            text-decoration: none;
+        }
+    }
+}
+.menu-toggle-btn{
+    float: right;
+    height: 90px;
+    line-height: 90px;
+    color: #000;
+    font-size: 26px;
+    display: none !important;
+    padding-top: 45px;
+    cursor: pointer;
+}
+
+
+
+
+//banner-------------------------------------------------------------------------
+.banner{
+    position: relative;
+    .sombra{
+        img{
+            box-shadow: -30px 30px  $aguamarina;
+        }
+    }
+    .texto{
+        position:absolute;
+        padding: 20px;
+        color: white;
+        .titulo{
+        }
+        .descripcion{
+            padding-right: 10px;
+            font-size: 1.5em;
+        }
+    }
+}
+
+
+//Nosotros--------------------------------------------------------------------------
+.nosotros{
+    padding-top:40px;
+    .rosa{
+        background: $rosa;
+    }
+    .titulo{
+        text-align: center;
+        font-weight: 300;
+    }
+    .tarjeta{
+        padding: 10px;
+        .texto{
+            text-align: center;
+            font-weight: 200;
+            font-size: 20px;
+        }
+        
+    }
+}
+
+
+
+@media screen and (max-width:767px){
+    
+    .inner-width{
+        .desaparecer{
+            display: none;
+        }
+    }
+    header{
+        height: 120px;
+    }
+    .especiales{
+        display: block;
+    }
+    .menu-toggle-btn{
+        display: block !important;
+    }
+    .navigation-menu{
+        position: fixed;
+        width: 100%;
+        max-width: 400px;
+        z-index: 99;
+        
+        top: 120px;
+        right: 0;
+        display: none;
+        padding: 20px 40px;
+        a{
+            display: block;
+            margin: 10px 0;
+        }
+        
+        
+    }
+    .active{
+        display: block;
+    }
+    
+    //Banner---------------------------------------
+    
+    .banner{
+        .titulo{
+            font-size: 30px;
+        }
+        .descripcion{
+            font-size: 20px;
+        }
+    }
+}
