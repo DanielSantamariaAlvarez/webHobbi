@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/d83b033f01.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="hhtps://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     
     <title>Hobbi</title>
 </head>
@@ -61,12 +64,12 @@
                     <a href="#">Contacto</a>
                 </div>
                 <div class="col-md-3 primi">
-                    <a href="#">Blog</a>
+                    <a href="#">evento</a>
                 </div>
             </nav>
         </div>
     </header>
-
+    
     <!--Banner-->
     <section class="banner">
         <div class="container">
@@ -85,7 +88,7 @@
             </div>
         </div>
     </section>
-
+    
     <!-- Todo sobre nosotros-->
     <section class="nosotros">
         <div class="container">
@@ -103,7 +106,7 @@
                         </p>
                     </div>
                 </div>
-
+                
                 <div class="col-md-4 mb-2">
                     <div class="tarjeta amarillo ">
                         <div class="imagen p-4"><img class="w-100"src="img/icono3.png" alt=""></div>
@@ -112,7 +115,7 @@
                         </p>
                     </div>
                 </div>
-
+                
                 <div class="col-md-4 mb-2">
                     <div class="tarjeta verde ">
                         <div class="imagen p-4"><img class="w-100"src="img/icono4.png" alt=""></div>
@@ -124,7 +127,7 @@
             </div>
         </div>
     </section>
-
+    
     <!-- Hobbies -->
     <section class="hobbies">
         <div class="container">
@@ -180,7 +183,7 @@
                         </div>
                     </a>
                     
-
+                    
                 </div>
                 <div class="col-md-6">
                     <!-- Artes -->
@@ -231,23 +234,94 @@
             </div>
         </div>
     </section>
-
+    
     <!-- Eventos -->
-    <section class="eventos">
+    <section class="proximos-eventos">
         <div class="container">
-            <div class="row">
+            <div class="row mb-5">
                 <div class="col-12">
                     <h2 class="titulo">PRÓXIMOS EVENTOS</h2>
                 </div>
             </div>
         </div>
+        <!-- evento1 -->
+        <div class="eventos owl-carousel">
+            <div class="evento">
+                <img src="img/evento1.jpg" alt="">
+                <div class="evento-description">
+                    <div class="categorie">Torneo</div>
+                    <h2 class="title">Torneo de fuchibol</h2>
+                    <div class="date">Enero 1 2021</div>
+                    <a href="#" class="btn">Ver más</a>
+                </div>
+            </div>
+            
+            <!-- evento2 -->
+            <div class="evento">
+                <img src="img/evento2.jpg" alt="">
+                <div class="evento-description">
+                    <div class="categorie">Deportes</div>
+                    <h2 class="title">Patinaje</h2>
+                    <div class="date">Febrero 1 2021</div>
+                    <a href="#" class="btn">Ver más</a>
+                </div>
+            </div>
+            
+            <!-- evento3 -->
+            <div class="evento">
+                <img src="img/evento1.jpg" alt="">
+                <div class="evento-description">
+                    <div class="categorie">Recreacion</div>
+                    <h2 class="title">integrcion de pintores</h2>
+                    <div class="date">Marzo 1 2021</div>
+                    <a href="#" class="btn">Ver más</a>
+                </div>
+            </div>
+            
+            <!-- evento4 -->
+            <div class="evento">
+                <img src="img/evento2.jpg" alt="">
+                <div class="evento-description">
+                    <div class="categorie">Vacaciones</div>
+                    <h2 class="title">Vacaiones Recreativas</h2>
+                    <div class="date">Junio 1 2021</div>
+                    <a href="#" class="btn">Ver más</a>
+                </div>
+            </div>
+        </div>
     </section>
-
+    
     <!-- Contacto -->
-    <section class="contacto"></section>
-
-    <footer></footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <section class="contacto">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h2 class="titulo">CONTÁCTANOS</h2>
+                </div>
+                <div class="col-12">
+                    <p class="texto">
+                        Escribenos si tienes dudas, recomendaciones o 
+                        quieres hacer parte de nuestro mundo Hobbi
+                    </p>
+                </div>
+            </div>
+                <form action="enviar.php"class ="formulario" id="formulario" method="post" name="contact-form">
+                    <div class="contenedor-inputs">
+                      <input type="text" name ="nombre" placeholder="Nombre">
+                      <input type="email" name ="correo" placeholder="Correo">
+                      <input type="text" name ="telefono" placeholder="Teléfono">
+                      <input type="text" name ="asunto" placeholder="  Asunto">
+                      <textarea name="mensaje" placeholder="Mensaje"></textarea>
+                    </div>
+              
+                    <div class="registro">
+                      <input type="submit" class="btn" value="Enviar">
+                    </div>
+                  </form>
+        </div>
+    </section>
+    
+    <footer>skd as</footer>
     <script src="js/efectos.js"></script>
 </body>
 </html>
