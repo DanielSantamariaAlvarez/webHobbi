@@ -116,6 +116,14 @@ header {
   background: #fbc8d2;
 }
 
+.nosotros .amarillo {
+  background: #fff96e;
+}
+
+.nosotros .verde {
+  background: #94fab0;
+}
+
 .nosotros .titulo {
   text-align: center;
   font-weight: 300;
@@ -124,6 +132,7 @@ header {
 
 .nosotros .tarjeta {
   padding: 10px;
+  height: 100%;
 }
 
 .nosotros .tarjeta .texto {

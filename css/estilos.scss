@@ -112,6 +112,12 @@ header{
     .rosa{
         background: $rosa;
     }
+    .amarillo{
+        background: $amarillo;
+    }
+    .verde{
+        background: $verde;
+    }
     .titulo{
         text-align: center;
         font-weight: 300;
@@ -119,6 +125,7 @@ header{
     }
     .tarjeta{
         padding: 10px;
+        height: 100%;
         .texto{
             text-align: center;
             font-weight: 200;
