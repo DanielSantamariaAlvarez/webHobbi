@@ -109,7 +109,7 @@ header {
 }
 
 .nosotros {
-  padding-top: 40px;
+  padding-top: 50px;
 }
 
 .nosotros .rosa {
@@ -119,6 +119,7 @@ header {
 .nosotros .titulo {
   text-align: center;
   font-weight: 300;
+  margin: 10px;
 }
 
 .nosotros .tarjeta {
@@ -137,6 +138,12 @@ header {
   }
   header {
     height: 120px;
+    position: fixed;
+    background: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
   }
   .especiales {
     display: block;
@@ -146,6 +153,7 @@ header {
   }
   .navigation-menu {
     position: fixed;
+    background: white;
     width: 100%;
     max-width: 400px;
     z-index: 99;
@@ -160,6 +168,9 @@ header {
   }
   .active {
     display: block;
+  }
+  .banner {
+    margin-top: 120px;
   }
   .banner .titulo {
     font-size: 30px;
