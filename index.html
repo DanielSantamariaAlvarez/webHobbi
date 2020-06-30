@@ -65,7 +65,7 @@
                     <a href="#Contacto">Contacto</a>
                 </div>
                 <div class="col-md-3 primi">
-                    <a href="#">Blog</a>
+                    <a href="blog.html">Blog</a>
                 </div>
             </nav>
         </div>
@@ -73,9 +73,9 @@
     
     <!--Banner-->
     <section class="banner">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-sm-12 col-xs-12 col-md-12 p-3 sombra">
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-xs-12 col-md-12 p-3 sombra">
+                <div class="container">
                     <div class="texto">
                         <h1 class="titulo">
                             HOBBI
@@ -84,8 +84,8 @@
                             Encontrarás los mejores lugares para tus actividades favoritas...
                         </p>
                     </div>
-                    <img class="w-100" src="img/banner.jpg" alt="">
                 </div>
+                <img class="w-100" src="img/banner.jpg" alt="">
             </div>
         </div>
     </section>
@@ -98,10 +98,13 @@
                     <h2 class="titulo">TODO SOBRE NOSOTROS</h2>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-4 mb-2">
-                    <div class="tarjeta rosa ">
-                        <div class="imagen p-4"><img class="w-100"src="img/icono2.png" alt=""></div>
+            
+        </div>
+        <div class="row tarjeteichon">
+            <div class="col-md-4 mb-2">
+                <div class="tarjeta rosa ">
+                    <div class="imagen p-4">
+                        <img class="w-100"src="img/location.png" alt=""></div>
                         <p class="texto ">
                             Hacemos más simple tu búsqueda y elección de actividades extracurriculares
                         </p>
@@ -110,7 +113,7 @@
                 
                 <div class="col-md-4 mb-2">
                     <div class="tarjeta amarillo ">
-                        <div class="imagen p-4"><img class="w-100"src="img/icono3.png" alt=""></div>
+                        <div class="imagen p-4"><img class="w-100"src="img/card.png" alt=""></div>
                         <p class="texto ">
                             Podrás pagar todas las actividades en un solo lugar y elegir la frecuencia en la que asistes
                         </p>
@@ -119,226 +122,267 @@
                 
                 <div class="col-md-4 mb-2">
                     <div class="tarjeta verde ">
-                        <div class="imagen p-4"><img class="w-100"src="img/icono4.png" alt=""></div>
+                        <div class="imagen p-4"><img class="w-100"src="img/information.png" alt=""></div>
                         <p class="texto ">
                             Te brindamos información de valor para acompañarte en el proceso                        
                         </p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    
-    <!-- Hobbies -->
-    <section class="hobbies" id="Hobbies">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h2 class="titulo">HOBBIES</h2>
+        </section>
+        
+        <!-- Hobbies -->
+        <section class="hobbies" id="Hobbies">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="titulo">HOBBIES</h2>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
+                <div class="row">
                     <!-- Deportes -->
-                    <a href="#">
-                        <div class="row">
-                            <div class="col-6">
-                                <img class="w-100" src="img/deportes.jpeg" alt="">
-                            </div>
-                            <div class="col-6">
-                                <img class="w-100" src="img/deportesM.jpeg" alt="">
-                            </div>
-                        </div>
-                    </a>
+                    <div class="col-md-4">
+                        <a href="#">
+                                <div class="wrap">
+                                    <div class="tarjeta-wrap">
+                                        <div class="tarjeta">
+                                            <div class="adelante card1">
+                                                <img  class="w-100" src="img/deportes.jpeg" alt="">
+                                            </div>
+                                            <div class="atras">
+                                                <img  class="w-100" src="img/deportesM.jpeg" alt="">    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </a>
+                    </div>
                     <!-- Música-->
-                    <a href="#">
-                        <div class="row">
-                            <div class="col-6">
-                                <img class="w-100" src="img/musicaM.jpeg" alt="">
-                            </div>
-                            <div class="col-6">
-                                <img class="w-100" src="img/musica.jpeg" alt="">
-                            </div>
-                        </div>
-                    </a>
+                    <div class="col-md-4">
+                        <a href="#">
+                                <div class="wrap">
+                                    <div class="tarjeta-wrap">
+                                        <div class="tarjeta">
+                                            <div class="adelante card1">
+                                                <img  class="w-100" src="img/musica.jpeg" alt=""> 
+                                            </div>
+                                            <div class="atras">   
+                                                <img  class="w-100" src="img/musicaM.jpeg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </a>
+                    </div>
                     <!-- Idiomas-->
-                    <a href="#">
-                        <div class="row">
-                            <div class="col-6">
-                                <img class="w-100" src="img/idiomas.jpeg" alt="">
-                            </div>
-                            <div class="col-6">
-                                <img class="w-100" src="img/idiomasM.jpeg" alt="">
-                            </div>
-                        </div>
-                    </a>
+                    <div class="col-md-4">
+                        <a href="#">
+                                <div class="wrap">
+                                    <div class="tarjeta-wrap">
+                                        <div class="tarjeta">
+                                            <div class="adelante card1">
+                                                <img  class="w-100" src="img/idiomas.jpeg" alt="">
+                                            </div>
+                                            <div class="atras">
+                                                <img  class="w-100" src="img/idiomasM.jpeg" alt="">    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </a>
+                    </div>
                     <!-- Danzas-->
-                    <a href="#">
-                        <div class="row">
-                            <div class="col-6">
-                                <img class="w-100" src="img/danzaM.jpeg" alt="">
-                            </div>
-                            <div class="col-6">
-                                <img class="w-100" src="img/danza.jpeg" alt="">
-                            </div>
+                    <div class="col-md-4">
+                        <a href="#">
+                                <div class="wrap">
+                                    <div class="tarjeta-wrap">
+                                        <div class="tarjeta">
+                                            <div class="adelante card1">
+                                                <img  class="w-100" src="img/danza.jpeg" alt="">
+                                            </div>
+                                            <div class="atras">
+                                                <img  class="w-100" src="img/danzaM.jpeg" alt="">    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <!-- Artes -->
+                        <a href="#">
+                                <div class="wrap">
+                                    <div class="tarjeta-wrap">
+                                        <div class="tarjeta">
+                                            <div class="adelante card1">
+                                                <img  class="w-100" src="img/artes.jpeg" alt="">
+                                            </div>
+                                            <div class="atras">
+                                                <img  class="w-100" src="img/artesM.jpeg" alt="">    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </a>
+                    </div>
+                        <!-- Manualidades -->
+                        <div class="col-md-4">
+                            <a href="#">
+                                    <div class="wrap">
+                                        <div class="tarjeta-wrap">
+                                            <div class="tarjeta">
+                                                <div class="adelante card1">
+                                                    <img  class="w-100" src="img/manualidades.jpeg" alt="">
+                                                </div>
+                                                <div class="atras">
+                                                    <img  class="w-100" src="img/manualidadesM.jpeg" alt="">    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </a>
                         </div>
-                    </a>
-                    
-                    
-                </div>
-                <div class="col-md-6">
-                    <!-- Artes -->
-                    <a href="#">
-                        <div class="row">
-                            <div class="col-6">
-                                <img class="w-100" src="img/artes.jpeg" alt="">
-                            </div>
-                            <div class="col-6">
-                                <img class="w-100" src="img/artesM.jpeg" alt="">
-                            </div>
+                        <!-- Artes Marciales -->
+                        <div class="col-md-4">
+                            <a href="#">
+                                    <div class="wrap">
+                                        <div class="tarjeta-wrap">
+                                            <div class="tarjeta">
+                                                <div class="adelante card1">
+                                                    <img  class="w-100" src="img/artesMarciales.jpeg" alt="">
+                                                </div>
+                                                <div class="atras">
+                                                    <img  class="w-100" src="img/artesMarcialesM.jpeg" alt="">    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </a>
                         </div>
-                    </a>
-                    <!-- Manualidades -->
-                    <a href="#">
-                        <div class="row">
-                            <div class="col-6">
-                                <img class="w-100" src="img/manualidadesM.jpeg" alt="">
-                            </div>
-                            <div class="col-6">
-                                <img class="w-100" src="img/manualidades.jpeg" alt="">
-                            </div>
+                        <!-- Otros -->
+                        <div class="col-md-4">
+                            <a href="#">
+                                    <div class="wrap">
+                                        <div class="tarjeta-wrap">
+                                            <div class="tarjeta">
+                                                <div class="adelante card1">
+                                                    <img  class="w-100" src="img/otros.jpeg" alt="">
+                                                </div>
+                                                <div class="atras">
+                                                    <img  class="w-100" src="img/otrosM.JPG" alt="">    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </a>
                         </div>
-                    </a>
-                    <!-- Artes Marciales -->
-                    <a href="#">
-                        <div class="row">
-                            <div class="col-6">
-                                <img class="w-100" src="img/artesMarciales.jpeg" alt="">
-                            </div>
-                            <div class="col-6">
-                                <img class="w-100" src="img/artesMarcialesM.jpeg" alt="">
-                            </div>
-                        </div>
-                    </a>
-                    <!-- Otros -->
-                    <a href="#">
-                        <div class="row">
-                            <div class="col-6">
-                                <img class="w-100" src="img/otrosM.JPG" alt="">
-                            </div>
-                            <div class="col-6">
-                                <img class="w-100" src="img/otros.jpeg" alt="">
-                            </div>
-                        </div>
-                    </a>
                 </div>
             </div>
-        </div>
-    </section>
-    
-    <!-- Eventos -->
-    <section class="proximos-eventos" id="Eventos">
-        <div class="container">
-            <div class="row mb-5">
-                <div class="col-12">
-                    <h2 class="titulo">PRÓXIMOS EVENTOS</h2>
+        </section>
+        
+        <!-- Eventos -->
+        <section class="proximos-eventos" id="Eventos">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-12">
+                        <h2 class="titulo">PRÓXIMOS EVENTOS</h2>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- evento1 -->
-        <div class="eventos owl-carousel">
-            <div class="evento">
-                <img src="img/evento1.jpg" alt="">
-                <div class="evento-description">
-                    <div class="categorie">Torneo</div>
-                    <h2 class="title">Torneo de fuchibol</h2>
-                    <div class="date">Enero 1 2021</div>
-                    <a href="#" class="btn">Ver más</a>
-                </div>
-            </div>
-            
-            <!-- evento2 -->
-            <div class="evento">
-                <img src="img/evento2.jpg" alt="">
-                <div class="evento-description">
-                    <div class="categorie">Deportes</div>
-                    <h2 class="title">Patinaje</h2>
-                    <div class="date">Febrero 1 2021</div>
-                    <a href="#" class="btn">Ver más</a>
-                </div>
-            </div>
-            
-            <!-- evento3 -->
-            <div class="evento">
-                <img src="img/evento1.jpg" alt="">
-                <div class="evento-description">
-                    <div class="categorie">Recreacion</div>
-                    <h2 class="title">integrcion de pintores</h2>
-                    <div class="date">Marzo 1 2021</div>
-                    <a href="#" class="btn">Ver más</a>
-                </div>
-            </div>
-            
-            <!-- evento4 -->
-            <div class="evento">
-                <img src="img/evento2.jpg" alt="">
-                <div class="evento-description">
-                    <div class="categorie">Vacaciones</div>
-                    <h2 class="title">Vacaiones Recreativas</h2>
-                    <div class="date">Junio 1 2021</div>
-                    <a href="#" class="btn">Ver más</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Contacto -->
-    <section class="contacto" id="Contacto">
-        <div class="container">
-            <div class="row mb-5">
-                <div class="col-12">
-                    <h2 class="titulo">CONTÁCTANOS</h2>
-                </div>
-                <div class="col-12">
-                    <p class="texto">
-                        Escribenos si tienes dudas, recomendaciones o 
-                        quieres hacer parte de nuestro mundo Hobbi
-                    </p>
-                </div>
-            </div>
-            <form action="enviar.php"class ="formulario" id="formulario" method="post" name="contact-form">
-                <div class="contenedor-inputs">
-                    <input type="text" name ="nombre" placeholder="Nombre">
-                    <input type="email" name ="correo" placeholder="Correo">
-                    <input type="text" name ="telefono" placeholder="Teléfono">
-                    <input type="text" name ="asunto" placeholder="  Asunto">
-                    <textarea name="mensaje" placeholder="Mensaje"></textarea>
+            <!-- evento1 -->
+            <div class="eventos owl-carousel">
+                <div class="evento">
+                    <img src="img/evento1.jpg" alt="">
+                    <div class="evento-description">
+                        <div class="categorie">Torneo</div>
+                        <h2 class="title">Torneo de fuchibol</h2>
+                        <div class="date">Enero 1 2021</div>
+                        <a href="#" class="btn">Ver más</a>
+                    </div>
                 </div>
                 
-                <div class="registro">
-                    <input type="submit" class="btn" value="Enviar">
+                <!-- evento2 -->
+                <div class="evento">
+                    <img src="img/evento2.jpg" alt="">
+                    <div class="evento-description">
+                        <div class="categorie">Deportes</div>
+                        <h2 class="title">Patinaje</h2>
+                        <div class="date">Febrero 1 2021</div>
+                        <a href="#" class="btn">Ver más</a>
+                    </div>
                 </div>
-            </form>
-        </div>
-    </section>
-    
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 pb-2">
-                    3187163428-3012576987
+                
+                <!-- evento3 -->
+                <div class="evento">
+                    <img src="img/evento1.jpg" alt="">
+                    <div class="evento-description">
+                        <div class="categorie">Recreacion</div>
+                        <h2 class="title">integrcion de pintores</h2>
+                        <div class="date">Marzo 1 2021</div>
+                        <a href="#" class="btn">Ver más</a>
+                    </div>
                 </div>
-                <div class="col-md-4 pb-2">
-                    contactohobbi@gmail.com
+                
+                <!-- evento4 -->
+                <div class="evento">
+                    <img src="img/evento2.jpg" alt="">
+                    <div class="evento-description">
+                        <div class="categorie">Vacaciones</div>
+                        <h2 class="title">Vacaiones Recreativas</h2>
+                        <div class="date">Junio 1 2021</div>
+                        <a href="#" class="btn">Ver más</a>
+                    </div>
                 </div>
-                <div class="col-md-4 pb-2 justify-content-center">
-                    <a target="_blank" href="#"class="instagram"><i class="fab fa-instagram"></i></a>
-                    <a target="_blank" href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
-                </div>
-    
             </div>
-        </div>
-    </footer>
-    <script src="js/efectos.js"></script>
-</body>
-</html>
+        </section>
+        
+        <!-- Contacto -->
+        <section class="contacto" id="Contacto">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-12">
+                        <h2 class="titulo">CONTÁCTANOS</h2>
+                    </div>
+                    <div class="col-12">
+                        <p class="texto">
+                            Escribenos si tienes dudas, recomendaciones o 
+                            quieres hacer parte de nuestro mundo Hobbi
+                        </p>
+                    </div>
+                </div>
+                <form action="enviar.php"class ="formulario" id="formulario" method="post" name="contact-form">
+                    <div class="contenedor-inputs">
+                        <input type="text" name ="nombre" placeholder="Nombre">
+                        <input type="email" name ="correo" placeholder="Correo">
+                        <input type="text" name ="telefono" placeholder="Teléfono">
+                        <input type="text" name ="asunto" placeholder="  Asunto">
+                        <textarea name="mensaje" placeholder="Mensaje"></textarea>
+                    </div>
+                    
+                    <div class="registro">
+                        <input type="submit" class="btn" value="Enviar">
+                    </div>
+                </form>
+            </div>
+        </section>
+        
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 pb-2">
+                        3187163428-3012576987
+                    </div>
+                    <div class="col-md-4 pb-2">
+                        contactohobbi@gmail.com
+                    </div>
+                    <div class="col-md-4 pb-2 justify-content-center">
+                        <a target="_blank" href="#"class="instagram"><i class="fab fa-instagram"></i></a>
+                        <a target="_blank" href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                    
+                </div>
+            </div>
+        </footer>
+        <script src="js/efectos.js"></script>
+    </body>
+    </html>

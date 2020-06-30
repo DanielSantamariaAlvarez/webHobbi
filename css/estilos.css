@@ -22,7 +22,7 @@ header {
 }
 
 .inner-width {
-  max-width: 1000px;
+  max-width: 100%;
   padding: 0 10px;
   margin: auto;
 }
@@ -33,7 +33,7 @@ header {
 
 .logo {
   float: left;
-  padding: 20px 0;
+  padding: 20px 20px;
 }
 
 .logo img {
@@ -44,6 +44,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 20px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -55,7 +56,6 @@ header {
   margin: auto;
   margin-left: 10px;
   font-size: 24px;
-  font-weight: 300;
   padding: 12px 20px;
   border-radius: 4px;
   -webkit-transition: .3s linear;
@@ -97,6 +97,7 @@ header {
 
 .banner {
   position: relative;
+  margin-top: 40px;
 }
 
 .banner .sombra img {
@@ -106,13 +107,17 @@ header {
 
 .banner .texto {
   position: absolute;
-  padding: 20px;
+  padding: 60px;
   color: white;
+}
+
+.banner .texto .titulo {
+  font-size: 50px;
 }
 
 .banner .texto .descripcion {
   padding-right: 10px;
-  font-size: 1.5em;
+  font-size: 40px;
 }
 
 .nosotros {
@@ -133,8 +138,9 @@ header {
 
 .nosotros .titulo {
   text-align: center;
-  font-weight: 300;
   margin: 10px;
+  color: black;
+  padding: 30px;
 }
 
 .nosotros .tarjeta {
@@ -144,27 +150,93 @@ header {
 
 .nosotros .tarjeta .texto {
   text-align: center;
-  font-weight: 200;
-  font-size: 20px;
+  font-size: 40px;
+}
+
+.nosotros .tarjeteichon {
+  margin: 20px 0px;
 }
 
 .hobbies {
-  margin-top: 30px;
+  margin-top: 80px;
 }
 
 .hobbies .titulo {
   text-align: center;
-  font-weight: 300;
   margin: 10px;
 }
 
+.hobbies .wrap {
+  margin: 20px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.hobbies .tarjeta-wrap {
+  margin: 10px;
+  -webkit-perspective: 800;
+          perspective: 800;
+}
+
+.hobbies .tarjeta {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: .7s ease;
+  transition: .7s ease;
+  -webkit-box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.65);
+  box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.65);
+}
+
+.hobbies .adelante, .hobbies .atras {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.hobbies .adelante {
+  width: 100%;
+}
+
+.hobbies .atras {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  font-family: "open sans";
+}
+
+.hobbies .tarjeta-wrap:hover .tarjeta {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
 .proximos-eventos {
-  margin-top: 30px;
+  margin-top: 70px;
 }
 
 .proximos-eventos .titulo {
   text-align: center;
-  font-weight: 300;
   margin: 20px;
 }
 
@@ -228,7 +300,6 @@ header {
 
 .proximos-eventos .evento .title {
   color: white;
-  font-weight: 500;
   margin: 5px 0;
 }
 
@@ -274,7 +345,6 @@ header {
 
 .contacto .titulo {
   text-align: center;
-  font-weight: 300;
   margin: 20px;
 }
 
@@ -396,10 +466,16 @@ footer .facebook {
   .banner {
     margin-top: 120px;
   }
-  .banner .titulo {
-    font-size: 30px;
+  .banner .texto {
+    padding: 20px;
   }
-  .banner .descripcion {
+  .banner .texto .titulo {
+    font-size: 20px;
+  }
+  .banner .texto .descripcion {
+    font-size: 16px;
+  }
+  .nosotros .tarjeta .texto {
     font-size: 20px;
   }
   .proximos-eventos .eventos .evento-description {
