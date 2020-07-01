@@ -23,7 +23,6 @@ header{
     }
 }
 
-
 .primi{
     &:hover{
         transform: scale(1.15);
@@ -453,7 +452,7 @@ footer{
           width: 100%;
           margin-bottom: 0.5em; }
     .sidebar .widget.boletin .formulario {
-      background: #0e2b37;
+        background: $aguamarina;
       padding: 1.25em;
       text-align: center; }
       .sidebar .widget.boletin .formulario label {
@@ -470,7 +469,7 @@ footer{
         border: none;
         margin-bottom: 1.25em; }
       .sidebar .widget.boletin .formulario input[type="submit"] {
-        background: #48b04d;
+        background: $rosa;
         border-radius: 3px;
         padding: 0.625em 1.875em;
         border: none;

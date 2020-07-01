@@ -19,6 +19,7 @@ header{
 }
 
 
+
 .primi{
     &:hover{
         transform: scale(1.15);
@@ -59,7 +60,6 @@ header{
 
 .navigation-menu{
     display: flex;
-    margin: 20px;
     align-items: center;
     min-height: 90px;
     text-align: center;
@@ -110,10 +110,10 @@ header{
 //banner-------------------------------------------------------------------------
 .banner{
     position: relative;
-    margin-top: 40px;
     .sombra{
         img{
             box-shadow: -30px 30px  $aguamarina;
+            
         }
     }
     .texto{
@@ -344,7 +344,7 @@ header{
 // Contáctanos-----------------------------------------------------
 .contacto{
     padding-top: 40px;
-    background: $rosa;
+    background: $aguamarina;
     margin-top: 20px;
     padding-bottom: 20px;
     text-align: center;
@@ -407,15 +407,19 @@ header{
 
 //footer--------------------------------------------------------------------
 footer{
-    padding: 20px;
-    background: $verde;
-    font-size: 16px;
+    padding: 30px;
+    font-size: 24px;
     text-align: center;
     a{
         text-decoration: none;
-        color: black;
+        color: white;
+        .gra{
+            font-size: 55px;
+        }
+        .gro{
+            font-size: 48px;
+        }
         i{
-            font-size: 35px;
             margin-right: 50px;
         }
     }
@@ -424,7 +428,7 @@ footer{
     }
     .facebook{
         color:  #3b5998;
-        transform: scale(2.2);
+        
     }
 }
 

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/d83b033f01.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="hhtps://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    
+    <title>Hobbi</title>
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <div class="inner-width">
+            <div class="row">
+                <div class="col-3">
+                    <a href="#" class="logo"><img src="img/hobbi.png" alt=""></a>
+                </div>
+                
+                
+                <div class="col-7 ">
+                    <div class="row justify-content-end desaparecer">
+                        <div class="col-4">
+                            <div class="row p-3">
+                                <div class="col-6 p-3"><i class="far fa-heart"></i></div>
+                                <div class="col-6 p-3"><i class="fas fa-shopping-cart"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-end desaparecer">
+                        <a href="contacto.html"><div class="inscripcion">Inscripcion Aliados</div></a>
+                        <a href="contacto.html"><div class="sesion">Inicio de Sesión</div></a>
+                    </div>
+                    <!-- Boton de menú-->
+                    <i class="menu-toggle-btn  fas fa-bars"></i>  
+                </div>
+            </div>
+            
+            <nav class="navigation-menu ">
+                
+                <div class="col-md-3 especiales">
+                    <a href="#">Inicia Sesión</a>
+                </div>
+                <div class="col-md-3 especiales">
+                    <a href="#">Inscripción aliados</a>
+                </div>
+                <div class="col-md-3 primi">
+                    <a href="index.html">Inicio</a>
+                </div>
+                <div class="col-md-3 primi">
+                    <a href="#Hobbies">Hobbies</a>
+                </div>
+                <div class="col-md-3 primi">
+                    <a href="#Contacto">Contacto</a>
+                </div>
+                <div class="col-md-3 primi">
+                    <a href="blog.html">Blog</a>
+                </div>
+                <div class="col-md-3 especiales">
+                    <i class="far fa-heart"></i><a href="#">Favoritos</a>
+                </div>
+                <div class="col-md-3 especiales">
+                    <i class="fas fa-shopping-cart"></i><a href="#">Carrito</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    
+        <!-- Contacto -->
+        <section class="contacto topito" id="Contacto">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-12">
+                        <h2 class="titulo">CONTÁCTANOS</h2>
+                    </div>
+                    <div class="col-12">
+                        <p class="texto">
+                            Escribenos si tienes dudas, recomendaciones o 
+                            quieres hacer parte de nuestro mundo Hobbi
+                        </p>
+                    </div>
+                </div>
+                <form action="enviar.php"class ="formulario" id="formulario" method="post" name="contact-form">
+                    <div class="contenedor-inputs">
+                        <input type="text" name ="nombre" placeholder="Nombre">
+                        <input type="email" name ="correo" placeholder="Correo">
+                        <input type="text" name ="telefono" placeholder="Teléfono">
+                        <input type="text" name ="asunto" placeholder="  Asunto">
+                        <textarea name="mensaje" placeholder="Mensaje"></textarea>
+                    </div>
+                    
+                    <div class="registro">
+                        <input type="submit" class="btn" value="Enviar">
+                    </div>
+                </form>
+            </div>
+        </section>
+        
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 pb-2">
+                        3187163428-3012576987
+                    </div>
+                    <div class="col-md-4 pb-2">
+                        contactohobbi@gmail.com
+                    </div>
+                    <div class="col-md-4 pb-2 justify-content-center">
+                        <a target="_blank" href="#"class="instagram"><i class="fab fa-instagram gra"></i></a>
+                        <a target="_blank" href="#" class="facebook"><i class="fab fa-facebook-f gro"></i></a>
+                    </div>
+                    
+                </div>
+            </div>
+        </footer>
+        <script src="js/efectos.js"></script>
+    </body>
+    </html>

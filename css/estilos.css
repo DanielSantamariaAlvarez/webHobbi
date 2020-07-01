@@ -44,7 +44,6 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 20px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -97,7 +96,6 @@ header {
 
 .banner {
   position: relative;
-  margin-top: 40px;
 }
 
 .banner .sombra img {
@@ -343,7 +341,7 @@ header {
 
 .contacto {
   padding-top: 40px;
-  background: #fbc8d2;
+  background: #8fe3d9;
   margin-top: 20px;
   padding-bottom: 20px;
   text-align: center;
@@ -406,19 +404,25 @@ header {
 }
 
 footer {
-  padding: 20px;
-  background: #94fab0;
-  font-size: 16px;
+  padding: 30px;
+  font-size: 24px;
   text-align: center;
 }
 
 footer a {
   text-decoration: none;
-  color: black;
+  color: white;
+}
+
+footer a .gra {
+  font-size: 55px;
+}
+
+footer a .gro {
+  font-size: 48px;
 }
 
 footer a i {
-  font-size: 35px;
   margin-right: 50px;
 }
 
@@ -428,8 +432,6 @@ footer .instagram {
 
 footer .facebook {
   color: #3b5998;
-  -webkit-transform: scale(2.2);
-          transform: scale(2.2);
 }
 
 @media screen and (max-width: 767px) {
